@@ -533,7 +533,6 @@ namespace Tyuiu.SklyarovAM.Sprint7.V1
                 statusStrip_SAM.Items[0].Text = $"Автомобиль {car.Plate} удалён";
             }
         }
-
         void SearchCars()
         {
             string search = txtSearch_SAM.Text.ToLower();
@@ -562,7 +561,6 @@ namespace Tyuiu.SklyarovAM.Sprint7.V1
             DrawChart();
             statusStrip_SAM.Items[0].Text = $"Найдено {filteredCars_SAM.Count} из {cars_SAM.Count}";
         }
-
         void SortCars()
         {
             if (filteredCars_SAM.Count == 0)
@@ -587,7 +585,6 @@ namespace Tyuiu.SklyarovAM.Sprint7.V1
             UpdateGrid();
             statusStrip_SAM.Items[0].Text = "Отсортировано по мощности";
         }
-
         void ShowAllCars()
         {
             filteredCars_SAM = new List<Car>(cars_SAM);
@@ -597,7 +594,6 @@ namespace Tyuiu.SklyarovAM.Sprint7.V1
             DrawChart();
             statusStrip_SAM.Items[0].Text = $"Показаны все автомобили ({cars_SAM.Count})";
         }
-
         void ClearInput()
         {
             txtPlate_SAM.Text = "";
